@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="bg-container">
+        <!-- App Title starts -->
+        <div class="logo-box">
+            <h1 class="app-title">Random Password Generator</h1>
+        </div>
+        <!-- App Title ends -->
+
+        <!-- Password Generator box starts -->
+        <div class="password-generator-box">
+            <h2 class="password-generator-title">Generate Your Password</h2>
+            <p class="password-generator-desc">Select your password length and
+                we will generate you a random password.
+            </p>
+            <div class="password-display-box">
+                <p class="generated-password">Password gets displayed here... </p>
+            </div>
+        </div>
+        <!-- Password Generator box ends -->
+
+        <!-- Password controls starts -->
+        <form action="#">
+            <div class="password-range-box">
+                <label for="password-range">Set your password length</label><br>
+                <input type="range" id="password-range" min="0" max="25" name="password-length" value="8">
+
+                <div class="password-len-display">
+                    <p class="password-length">25</p>
+                </div>
+            </div>
+        </form>
+        <!-- Password controls ends -->
+        <div class="btn-box">
+            <button class="generate-btn">Generate</button>
+        </div>
+
+        <p class="note">*** Generated password includes A-Z | a-z | 0-9 | and Special Characters like [%,&,*,$....] </p>
+
+        <div class="footer">
+            <p class="credits">&copy; Created by Purnachandra Bandaru</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
